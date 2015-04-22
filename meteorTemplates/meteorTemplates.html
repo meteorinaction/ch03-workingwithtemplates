@@ -54,7 +54,9 @@
   <div class="cookies">
     <p>Look, more cookies!</p>
     {{#if image}}
-    <img src="{{image}}" /> {{/if}}
+    <img src="{{image}}" /> {{else}}
+    <p>Sorry, no image available.</p>
+    {{/if}}
   </div>
 </template>
 
