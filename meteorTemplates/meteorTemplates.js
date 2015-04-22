@@ -16,7 +16,12 @@ if (Meteor.isClient) {
       return "partialsNewsStream";
     }
   });
-
+  Template.ifBlock.helpers({
+    image: function () {
+      return false;
+      //return "cookies.jpg";
+    }
+  });
 }
 
 if (Meteor.isServer) {

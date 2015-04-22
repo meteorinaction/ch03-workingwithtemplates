@@ -5,7 +5,7 @@
 <body>
   <h1>Welcome to Meteor!</h1>
 
-  {{> expressions}} {{> partialsSplit}} {{> dynamicPartials}}
+  {{> expressions}} {{> partialsSplit}} {{> dynamicPartials}} {{> ifBlock}}
 </body>
 
 <template name="expressions">
@@ -50,6 +50,7 @@
 </template>
 
 <template name="ifBlock">
+  <h3>ifBlock template</h3>
   <div class="cookies">
     <p>Look, more cookies!</p>
     {{#if image}}
