@@ -5,7 +5,7 @@
 <body>
   <h1>Welcome to Meteor!</h1>
 
-  {{> expressions}} {{> partialsSplit}} {{> dynamicPartials}} {{> ifBlock}} {{> unlessBlock}} {{> eachBlock}} {{> withBlock}} {{> localHelpers}} {{> globalHelpers}}
+  {{> expressions}} {{> partialsSplit}} {{> dynamicPartials}} {{> ifBlock}} {{> unlessBlock}} {{> eachBlock}} {{> withBlock}} {{> localHelpers}} {{> globalHelpers}} {{> coderOfTheMonth }}
 </body>
 
 <template name="expressions">
@@ -102,4 +102,17 @@
   {{#if gt skills 1}}
   <a href="/skills">see more…</a> {{/if}} {{#if gt images 4}}
   <a href="/images">see more…</a> {{/if}}
+</template>
+
+<template name="coderOfTheMonth">
+  {{# sidebarWidget title="Coder of the month"}} Manuel {{/sidebarWidget}}
+</template>
+
+<template name="sidebarWidget">
+  <div class="sidebar-widget box">
+    <div class="title">{{ this.title }}</div>
+    <div class="content">
+      {{> Template.contentBlock}}
+    </div>
+  </div>
 </template>
