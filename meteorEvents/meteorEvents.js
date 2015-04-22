@@ -14,6 +14,7 @@ if (Meteor.isClient) {
   });
   Template.green.events({
     'click button': function (event, template) {
+      event.stopImmediatePropagation();
       $('body').css('background-color', 'green');
     }
   });
