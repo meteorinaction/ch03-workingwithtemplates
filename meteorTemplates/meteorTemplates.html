@@ -5,7 +5,7 @@
 <body>
   <h1>Welcome to Meteor!</h1>
 
-  {{> expressions}} {{> partialsSplit}} {{> dynamicPartials}} {{> ifBlock}} {{> unlessBlock}} {{> eachBlock}}
+  {{> expressions}} {{> partialsSplit}} {{> dynamicPartials}} {{> ifBlock}} {{> unlessBlock}} {{> eachBlock}} {{> withBlock}}
 </body>
 
 <template name="expressions">
@@ -73,5 +73,16 @@
     {{#each skills}}
     <li>{{this}}</li>
     {{/each}}
+  </ul>
+</template>
+
+<template name="withBlock">
+  <h3>withBlock template</h3>
+  <ul>
+    {{#with profileJim}}
+    <p>{{name}}</p>
+    {{#each skills}}
+    <li>{{this}}</li>
+    {{/each}} {{/with}}
   </ul>
 </template>

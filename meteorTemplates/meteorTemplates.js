@@ -27,6 +27,15 @@ if (Meteor.isClient) {
       return ['Meteor', 'Sailing', 'Cooking'];
     }
   });
+  Template.withBlock.helpers({
+    profileJim: function () {
+      var jim = {
+        name: 'Jim "Sailor Ripley" Johnson',
+        skills: ['Meteor', 'Sailing', 'Cooking'],
+      };
+      return jim;
+    }
+  });
 
 }
 
