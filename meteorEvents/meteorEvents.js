@@ -7,6 +7,17 @@ if (Meteor.isClient) {
       // start fancy animation
     }
   });
+  Template.layout.events({
+    'click button': function (event, template) {
+      $('body').css('background-color', 'red');
+    }
+  });
+  Template.green.events({
+    'click button': function (event, template) {
+      $('body').css('background-color', 'green');
+    }
+  });
+
 }
 
 if (Meteor.isServer) {
