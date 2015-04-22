@@ -36,6 +36,17 @@ if (Meteor.isClient) {
       return jim;
     }
   });
+  Template.localHelpers.helpers({
+    name: 'Jim',
+    image: {
+      large: '/jim-profile-large.jpg',
+      thumb: '/jim-profile-thumb.jpg'
+    },
+    skills: ['Meteor', 'Sailing', 'Cooking'],
+    hasMoreSkills: function (skills) {
+      return skills && skills.length > 1;
+    }
+  });
 
 }
 
