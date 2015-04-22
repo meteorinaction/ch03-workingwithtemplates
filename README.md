@@ -1,5 +1,5 @@
 Chapter 3: Working with Templates
-=============================================
+=================================
 
 Code Samples and Snippets for the book Meteor in Action
 
