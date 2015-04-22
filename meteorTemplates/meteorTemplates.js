@@ -22,6 +22,12 @@ if (Meteor.isClient) {
       return "cookies.jpg";
     }
   });
+  Template.eachBlock.helpers({
+    skills: function () {
+      return ['Meteor', 'Sailing', 'Cooking'];
+    }
+  });
+
 }
 
 if (Meteor.isServer) {
