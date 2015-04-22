@@ -48,3 +48,12 @@
     {{> Template.dynamic template=templateNameRight }}
   </div>
 </template>
+
+<template name="ifBlock">
+  <div class="cookies">
+    <p>Look, more cookies!</p>
+    {{#if image}}
+    <img src="{{image}}" /> {{/if}}
+  </div>
+
+</template>
