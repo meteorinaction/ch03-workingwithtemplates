@@ -47,6 +47,14 @@ if (Meteor.isClient) {
       return skills && skills.length > 1;
     }
   });
+  Template.globalHelpers.helpers({
+    skills: function () {
+      return ['Meteor', 'Sailing', 'Cooking'];
+    },
+    images: function () {
+      return ['/jim-profile-large.jpg', '/jim-profile-thumb.jpg'];
+    }
+  });
 
 }
 

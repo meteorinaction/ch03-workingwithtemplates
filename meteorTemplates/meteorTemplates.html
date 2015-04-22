@@ -5,7 +5,7 @@
 <body>
   <h1>Welcome to Meteor!</h1>
 
-  {{> expressions}} {{> partialsSplit}} {{> dynamicPartials}} {{> ifBlock}} {{> unlessBlock}} {{> eachBlock}} {{> withBlock}} {{> localHelpers}}
+  {{> expressions}} {{> partialsSplit}} {{> dynamicPartials}} {{> ifBlock}} {{> unlessBlock}} {{> eachBlock}} {{> withBlock}} {{> localHelpers}} {{> globalHelpers}}
 </body>
 
 <template name="expressions">
@@ -95,4 +95,11 @@
   <p>Primary Skill: {{skills.[0]}}</p>
   {{#if hasMoreSkills skills}}
   <a href="/skills">see more…</a> {{/if}} {{/if}}
+</template>
+
+<template name="globalHelpers">
+  <h3>globalHelpers template</h3>
+  {{#if gt skills 1}}
+  <a href="/skills">see more…</a> {{/if}} {{#if gt images 4}}
+  <a href="/images">see more…</a> {{/if}}
 </template>
