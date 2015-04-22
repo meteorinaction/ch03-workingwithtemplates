@@ -5,7 +5,7 @@
 <body>
   <h1>Welcome to Meteor!</h1>
 
-  {{> expressions}} {{> partials}}
+  {{> expressions}} {{> partialsSplit}}
 </body>
 
 <template name="expressions">
@@ -15,17 +15,25 @@
   {{{ name }}}
 </template>
 
-<template name="partials">
+<template name="partialsSplit">
   <div class="left">
-    <img src="{{image}}">
-    <p>{{name}}</p>
+    {{> partialsUserProfile}}
   </div>
   <div class="right">
-    <ul class="news-stream">
-      <li class="news-item">Yesterday I went fishing, boy this was a blast</li>
-      <li class="news-item">Look, cookies!
-        <img src="cookies.jpg">
-      </li>
-    </ul>
+    {{> partialsNewsStream}}
   </div>
+</template>
+
+<template name="partialsUserProfile">
+  <img src="{{image}}">
+  <p>{{name}}</p>
+</template>
+
+<template name="partialsNewsStream">
+  <ul class="news-stream">
+    <li class="news-item">Yesterday I went fishing, boy this was a blast</li>
+    <li class="news-item">Look, cookies!
+      <img src="cookies.jpg">
+    </li>
+  </ul>
 </template>

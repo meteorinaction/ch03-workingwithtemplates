@@ -4,7 +4,7 @@ if (Meteor.isClient) {
       return "<strong>Michael</strong>";
     }
   });
-  Template.partials.helpers({
+  Template.partialsUserProfile.helpers({
     name: 'Jim',
     image: '/jim-profile-thumb.jpg'
   })
