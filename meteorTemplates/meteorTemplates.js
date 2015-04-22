@@ -55,7 +55,16 @@ if (Meteor.isClient) {
       return ['/jim-profile-large.jpg', '/jim-profile-thumb.jpg'];
     }
   });
-
+  Template.templateElseBlock.helpers({
+    gender: function () {
+      return 'm';
+    }
+  });
+  Template.isFemale.helpers({
+    eq: function (a, b) {
+      return a === b;
+    }
+  });
 }
 
 if (Meteor.isServer) {
