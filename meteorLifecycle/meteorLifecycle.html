@@ -3,6 +3,10 @@
 </head>
 
 <body>
-  <h1>Welcome to Meteor!</h1>
-
+  {{> profile}}
 </body>
+<template name="profile">
+  {{!-- demonstrating the lifecycle --}}
+  <p>{{placeholder}}</p>
+  <button>Button</button>
+</template>
