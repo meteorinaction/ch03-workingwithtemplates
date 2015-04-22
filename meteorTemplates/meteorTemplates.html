@@ -14,3 +14,18 @@
   <h3>Triple curly braces</h3>
   {{{ name }}}
 </template>
+
+<template name="partials">
+  <div class="left">
+    <img src="{{image}}">
+    <p>{{name}}</p>
+  </div>
+  <div class="right">
+    <ul class="news-stream">
+      <li class="news-item">Yesterday I went fishing, boy this was a blast</li>
+      <li class="news-item">Look, cookies!
+        <img src="cookies.jpg">
+      </li>
+    </ul>
+  </div>
+</template>
