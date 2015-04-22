@@ -5,7 +5,7 @@
 <body>
   <h1>Welcome to Meteor!</h1>
 
-  {{> expressions}} {{> partialsSplit}} {{> dynamicPartials}} {{> ifBlock}} {{> unlessBlock}} {{> eachBlock}} {{> withBlock}} {{> localHelpers}} {{> globalHelpers}} {{> coderOfTheMonth }} {{> templateElseBlock}}
+  {{> expressions}} {{> partialsSplit}} {{> dynamicPartials}} {{> ifBlock}} {{> unlessBlock}} {{> eachBlock}} {{> withBlock}} {{> localHelpers}} {{> globalHelpers}} {{> coderOfTheMonth }} {{> templateElseBlock}} {{> logicByHelper }}
 </body>
 
 <template name="expressions">
@@ -124,4 +124,9 @@
 
 <template name="isFemale">
   {{#if eq this 'w'}} {{> Template.contentBlock}} {{else}} {{> Template.elseBlock}} {{/if}}
+</template>
+
+<template name="logicByHelper">
+  <h3>logicByHelper template</h3>
+  {{genderLabel gender}}
 </template>

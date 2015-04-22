@@ -65,6 +65,17 @@ if (Meteor.isClient) {
       return a === b;
     }
   });
+  Template.logicByHelper.helpers({
+    gender: 'm',
+    genderLabel: function (gender) {
+      if (gender === 'm') {
+        return 'Mr.';
+      } else {
+        return 'Mrs.';
+      }
+    }
+  });
+
 }
 
 if (Meteor.isServer) {
