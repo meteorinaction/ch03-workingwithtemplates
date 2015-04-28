@@ -3,6 +3,12 @@ Chapter 3: Working with Templates
 
 Code Samples and Snippets for the book Meteor in Action
 
+See a live version at
+
+-   <http://mia-chapter3a.meteor.com/> (`meteorTemplates`).
+-   <http://mia-chapter3b.meteor.com/> (`meteorEvents`).
+-   <http://mia-chapter3c.meteor.com/> (`meteorLifecycle`).
+
 ![Meteor in Action
 cover](http://www.manning.com/hochhaus/hochhaus_cover150.jpg)
 
